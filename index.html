@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monofett&family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/guessIcon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GuessTheNumber</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="upperSectiondiv">
+        <div class="guessDivUpper">
+          <h1>GUESS MY NUMBER !</h1>
+          <img src="" alt="" />
+          <div>
+            <div><input type="number" id="guessNumber" /></div>
+            <div>
+              <button>Check</button>
+            </div>
+          </div>
+        </div>
+        <div class="guessDivLower">
+          <div>
+            <div></div>
+            <div><span id="secretNumber">?</span></div>
+          </div>
+          <img src="" alt="" />
+          <h2>START GUESSING…</h2>
+        </div>
+        <h4>< BETWEEN 1 TO 50 ></h4>
+      </section>
+      <section class="lowerSection">
+        <h2>SCORE :</h2>
+        <span class="score">0</span>
+        <h2>HIGHEST SCORE :</h2>
+        <span class="highestScore">0</span>
+        <button>AGAIN !</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
