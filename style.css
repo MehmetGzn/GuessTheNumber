@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fascinate", cursive;
+}
+
+body {
+  font-size: 1.5rem;
+  color: #ec994b;
+  background-color: #f5eedc;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 4rem 0;
+}
+
+.upperSectiondiv {
+  text-align: center;
+}
+
+h1 {
+  margin-left: 2.5rem;
+  font-size: 4.5rem;
+}
+
+img {
+  width: 50px;
+}
+
+.guessDivUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 0.8rem solid #97bfb4;
+}
+
+.upperBox {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 11rem;
+  margin-bottom: -1px;
+  border-top: 0.8rem solid #97bfb4;
+  border-left: 0.8rem solid #97bfb4;
+  border-right: 1.6rem solid #97bfb4;
+}
+
+#guessNumber {
+  margin-left: 0.6rem;
+  padding-bottom: 2rem;
+  outline: none;
+  border: none;
+  background-color: #f5eedc;
+  color: #4f091d;
+  text-align: center;
+  width: 10rem;
+  height: 9rem;
+  font-size: 6rem;
+}
+
+#guessNumber:hover::-webkit-input-placeholder {
+  color: #4f091d;
+  transition: all 0.5s ease-in-out;
+}
+
+.guessDivLower {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.3rem;
+  color: #dd4a48;
+}
+
+.lowerBox {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 11rem;
+  width: 13rem;
+  border-bottom: 0.8rem solid #97bfb4;
+  border-right: 0.8rem solid #97bfb4;
+  border-left: 1.6rem solid #97bfb4;
+}
+
+#secretNumber {
+  color: #4f091d;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+h3 {
+  color: #4f091d;
+}
+
+.lowerSection {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  color: #dd4a48;
+}
+
+.scoreDiv,
+.highScoreDiv {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkButton,
+.againButton {
+  padding: 0.3rem 0.7rem;
+  background-color: #97bfb4;
+  color: #f5eedc;
+  border: none;
+  font-size: 2.3rem;
+}
+
+.checkButton:hover,
+.againButton:hover {
+  transition: all 0.5s ease-in-out;
+  border-bottom: #4f091d solid 0.8rem;
+  border-right: #4f091d solid 1.6rem;
+}
