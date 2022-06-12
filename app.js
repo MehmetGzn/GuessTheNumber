@@ -65,4 +65,5 @@ check.addEventListener("click", () => {
 });
 
 if (message.innerText == "CONGRATULATIONS YOU FOUND IT") {
+  highestScore.innerText = score.innerHTML
 }
