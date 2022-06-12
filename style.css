@@ -90,7 +90,7 @@ img {
   border-left: 1.6rem solid #97bfb4;
 }
 
-#secretNumber {
+#secretNumberSpan {
   color: #4f091d;
   font-size: 5rem;
   padding: 1rem;
@@ -128,7 +128,7 @@ h3 {
 
 .checkButton:hover,
 .againButton:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border-bottom: #4f091d solid 0.8rem;
   border-right: #4f091d solid 1.6rem;
 }
