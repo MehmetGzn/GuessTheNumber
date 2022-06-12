@@ -12,7 +12,6 @@ body {
 }
 
 .main {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,11 +131,4 @@ h3 {
   transition: all 0.4s ease-in-out;
   border-bottom: #4f091d solid 0.8rem;
   border-right: #4f091d solid 1.6rem;
-}
-
-.playAgain {
-  display: none;
-  position: absolute;
-  bottom: 6.6rem;
-  left: 23rem;
 }

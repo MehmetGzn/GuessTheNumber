@@ -7,12 +7,12 @@ const check = document.getElementsByClassName("checkButton")[0];
 const again = document.getElementsByClassName("againButton")[0];
 const score = document.getElementsByClassName("score")[0];
 const highestScore = document.getElementsByClassName("highestScore")[0];
-const playAgain = document.getElementsByClassName("playAgain")[0];
 const input = document.getElementById("guessNumber");
 const message = document.getElementById("message");
 const littleNumber = document.getElementById("littleNumber");
 const bigerNumber = document.getElementById("bigerNumber");
 
+let scoreArray = [];
 let scoreCounter = 25;
 score.innerHTML = scoreCounter;
 
@@ -23,7 +23,12 @@ check.addEventListener("click", () => {
     message.innerText = "CONGRATULATIONS YOU FOUND IT";
     message.style.fontSize = "2.8rem";
     secretNumberSpan.innerText = secretNumber;
-    playAgain.style.display = "block";
+    again.style.fontSize = "3.3rem";
+    setTimeout(() => {
+      again.style.fontSize = "2.3rem";
+      again.style.transition = ".3s ease-in-out";
+    }, 800);
+    again.style.fontSize = "3.3rem";
   } else if (+input.value > secretNumber) {
     if (scoreCounter > 1) {
       message.innerText = "TOO HIGH...";
@@ -61,8 +66,8 @@ check.addEventListener("click", () => {
       score.innerHTML = 0;
     }
   }
+  if (message.innerText == "CONGRATULATIONS YOU FOUND IT") {
+    scoreArray.push(+score.innerHTML);
+    highestScore.innerText = Math.max(...scoreArray);
+  }
 });
-
-if (message.innerText == "CONGRATULATIONS YOU FOUND IT") {
-  highestScore.innerText = score.innerHTML
-}
