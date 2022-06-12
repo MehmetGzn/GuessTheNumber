@@ -1,5 +1,5 @@
 # GuessTheNumber
 
-#Page
+# Page
 
 https://mehmetgzn.github.io/GuessTheNumber/
