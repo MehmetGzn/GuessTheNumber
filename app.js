@@ -11,7 +11,6 @@ const input = document.getElementById("guessNumber");
 const message = document.getElementById("message");
 const littleNumber = document.getElementById("littleNumber");
 const bigerNumber = document.getElementById("bigerNumber");
-secretNumberSpan.innerText = secretNumber;
 
 let scoreCounter = 50;
 score.innerHTML = scoreCounter;
