@@ -25,7 +25,7 @@ body {
 
 h1 {
   margin-left: 2.5rem;
-  font-size: 4.5rem;
+  font-size: 3.5em;
 }
 
 img {
@@ -36,7 +36,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5em;
   border-bottom: 0.8rem solid #97bfb4;
 }
 
@@ -61,7 +61,7 @@ img {
   text-align: center;
   width: 10rem;
   height: 9rem;
-  font-size: 6rem;
+  font-size: 4em;
 }
 
 #guessNumber:hover::-webkit-input-placeholder {
@@ -73,8 +73,8 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
-  font-size: 2.3rem;
+  gap: 1.5em;
+  font-size: 1.6em;
   color: #dd4a48;
 }
 
@@ -92,7 +92,7 @@ img {
 
 #secretNumberSpan {
   color: #4f091d;
-  font-size: 5rem;
+  font-size: 2.5em;
   padding: 1rem;
 }
 
@@ -105,15 +105,15 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  font-size: 2rem;
+  gap: 1em;
+  font-size: 1.5em;
   color: #dd4a48;
 }
 
 .scoreDiv,
 .highScoreDiv {
   display: flex;
-  gap: 1rem;
+  gap: 1em;
   margin-bottom: 1rem;
 }
 
@@ -123,7 +123,7 @@ h3 {
   background-color: #97bfb4;
   color: #f5eedc;
   border: none;
-  font-size: 2.3rem;
+  font-size: 1.1em;
 }
 
 .checkButton:hover,
@@ -131,4 +131,41 @@ h3 {
   transition: all 0.4s ease-in-out;
   border-bottom: #4f091d solid 0.8rem;
   border-right: #4f091d solid 1.6rem;
+}
+
+@media only screen and (max-width: 1350px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  body {
+    font-size: 0.7rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
