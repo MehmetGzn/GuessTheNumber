@@ -36,15 +36,15 @@ check.addEventListener("click", () => {
       document.body.style.backgroundColor = "#FCF9AF";
       input.style.backgroundColor = "#FCF9AF";
       message.innerText = "CONGRATULATIONS YOU FOUND IT";
-      message.style.fontSize = "2.8em";
+      message.style.fontSize = "2.8rem";
       secretNumberSpan.innerText = secretNumber;
       // to show there is again button
-      again.style.fontSize = "3.3em";
+      again.style.fontSize = "3.3rem";
       setTimeout(() => {
-        again.style.fontSize = "2.3em";
+        again.style.fontSize = "2.3rem";
         again.style.transition = ".3s ease-in-out";
       }, 800);
-      again.style.fontSize = "3.3em";
+      again.style.fontSize = "3.3rem";
       // to set a high score
       scoreArray.push(+score.innerHTML);
       highestScore.innerText = Math.max(...scoreArray);
@@ -56,12 +56,12 @@ check.addEventListener("click", () => {
         // to show the change of the interval after wrong number
         if (bigerNumber.innerText > input.value) {
           bigerNumber.innerText = input.value;
-          interval.style.fontSize = "3em";
+          interval.style.fontSize = "3rem";
           setTimeout(() => {
-            interval.style.fontSize = "2em";
+            interval.style.fontSize = "2rem";
             interval.style.transition = ".3s ease-in-out";
           }, 500);
-          interval.style.fontSize = "3em";
+          interval.style.fontSize = "3rem";
         }
       } else {
         message.textContent = "YOU LOSE THE GAME !";
@@ -75,12 +75,12 @@ check.addEventListener("click", () => {
         // to show the change of the interval after wrong number
         if (littleNumber.innerText < input.value) {
           littleNumber.innerText = input.value;
-          interval.style.fontSize = "3em";
+          interval.style.fontSize = "3rem";
           setTimeout(() => {
-            interval.style.fontSize = "2em";
+            interval.style.fontSize = "2rem";
             interval.style.transition = ".3s ease-in-out";
           }, 500);
-          interval.style.fontSize = "3em";
+          interval.style.fontSize = "3rem";
         }
       } else {
         message.textContent = "YOU LOSE THE GAME !";
