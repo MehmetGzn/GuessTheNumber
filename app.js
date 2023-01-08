@@ -1,5 +1,5 @@
 let secretNumber = Math.floor(Math.random() * 49) + 1;
-console.log(secretNumber);
+
 
 const secretNumberSpan = document.getElementById("secretNumberSpan");
 const interval = document.getElementById("interval");
@@ -22,10 +22,13 @@ again.addEventListener("click", () => {
   message.innerText = "START GUESSING AGAIN...";
   document.body.style.backgroundColor = "#f5eedc";
   input.style.backgroundColor = "#f5eedc";
+  littleNumber.innerText = 1;
+  bigerNumber.innerText = 50;
+  input.value = 0;
+  secretNumberSpan.innerText = "?";
   score.innerHTML = 25;
   scoreCounter = 25;
   secretNumber = Math.floor(Math.random() * 49) + 1;
-  console.log(secretNumber);
 });
 
 check.addEventListener("click", () => {
