@@ -47,7 +47,6 @@ check.addEventListener("click", () => {
         again.style.fontSize = "2.3rem";
         again.style.transition = ".3s ease-in-out";
       }, 800);
-      again.style.fontSize = "3.3rem";
       // to set a high score
       scoreArray.push(+score.innerHTML);
       highestScore.innerText = Math.max(...scoreArray);
@@ -64,7 +63,6 @@ check.addEventListener("click", () => {
             interval.style.fontSize = "2rem";
             interval.style.transition = ".3s ease-in-out";
           }, 500);
-          interval.style.fontSize = "3rem";
         }
       } else {
         message.textContent = "YOU LOSE THE GAME !";
@@ -83,7 +81,6 @@ check.addEventListener("click", () => {
             interval.style.fontSize = "2rem";
             interval.style.transition = ".3s ease-in-out";
           }, 500);
-          interval.style.fontSize = "3rem";
         }
       } else {
         message.textContent = "YOU LOSE THE GAME !";
